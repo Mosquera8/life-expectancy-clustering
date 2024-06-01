@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
 # Cargar datos
-data_path = 'LifeExpectancy.csv'  # Cambia esto a la ruta correcta
+data_path = 'LifeExpectancy.csv'  
 df = pd.read_csv(data_path)
 
 # Seleccionar características
@@ -32,11 +32,13 @@ Selecciona el número de clusters y explora los resultados visualmente.
 st.subheader('Explicación de las Columnas Utilizadas')
 st.write("""
 Para la creación de los clusters, utilizamos las siguientes columnas:
+         
 - **Adult Mortality**: Mortalidad adulta.
 - **BMI**: Índice de masa corporal.
 - **HIV/AIDS**: Tasa de mortalidad por VIH/SIDA.
 - **Income composition of resources**: Composición de los ingresos de los recursos.
-- **Schooling**: Muertes infantiles.
+- **Schooling**: Escolaridad.
+         
 Estas características fueron seleccionadas para identificar patrones en los datos que puedan ser útiles para el análisis de la expectativa de vida.
 """)
 
